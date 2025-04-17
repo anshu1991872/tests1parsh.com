@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Schedule</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+
+    .location-box {
+      background: white;
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .location-box a {
+      color: #2575fc;
+      text-decoration: none;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 60px auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #2575fc;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+
+    .timeline-item {
+      padding: 20px 40px;
+      position: relative;
+      background: inherit;
+      width: 50%;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: #fff;
+      border: 4px solid #2575fc;
+      top: 30px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-item.left {
+      left: 0;
+    }
+
+    .timeline-item.right {
+      left: 50%;
+    }
+
+    .timeline-item.right::after {
+      left: -10px;
+    }
+
+    .timeline-content {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    .timeline-time {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #2575fc;
+    }
+
+    .timeline-title {
+      font-size: 1.2rem;
+      margin: 10px 0 5px;
+    }
+
+    .timeline-desc {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 30px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .timeline-item.right {
+        left: 0%;
+      }
+
+      .timeline-item::after {
+        left: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SPARSH Outreach Program - Event Schedule</h1>
+    <div class="location-box">
+      📍 <strong>Location:</strong>
+      <a href="https://www.google.com/maps?q=CDA+(Army),+Meerut" target="_blank">
+        CDA (Army), Meerut
+      </a> &nbsp; | 🗓️ <strong>Date:</strong> 24 April 2025
+    </div>
+  </header>
+
+  <section class="timeline">
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <div class="timeline-time">10:00 AM</div>
+        <div class="timeline-title">Inauguration Ceremony</div>
+        <div class="timeline-desc">Welcome address and lighting of the lamp by the Chief Guest.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <div class="timeline-time">11:00 AM</div>
+        <div class="timeline-title">Medical Awareness Talk</div>
+        <div class="timeline-desc">Doctors sharing tips on health and veteran welfare.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <div class="timeline-time">12:00 PM</div>
+        <div class="timeline-title">Cultural Program</div>
+        <div class="timeline-desc">Exciting performances by students and local artists.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <div class="timeline-time">2:00 PM</div>
+        <div class="timeline-title">Guest Speeches</div>
+        <div class="timeline-desc">Inspiring words and stories shared by our honorable guests.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <div class="timeline-time">4:00 PM</div>
+        <div class="timeline-title">Distribution of Aids</div>
+        <div class="timeline-desc">Essential support items handed over to veterans and widows.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <div class="timeline-time">5:30 PM</div>
+        <div class="timeline-title">Closing Ceremony</div>
+        <div class="timeline-desc">Vote of thanks, certificate distribution and refreshments.</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notice Board</title>
+  <style>
+    body {
+      background-color: rgb(224, 217, 217);
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 1rem;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Gallery</h1>
+
+  <section class="image-grid">
+    <img src="np.png" alt="Circular 1">
+    <img src="np.png" alt="Circular 2">
+    <img src="np.png" alt="Circular 3">
+    <img src="np.png" alt="Circular 4">
+    <img src="np.png" alt="Circular 5">
+    <img src="np.png" alt="Circular 6">
+    <img src="np.png" alt="Circular 7">
+    <img src="np.png" alt="Circular 8">
+    <img src="np.png" alt="Circular 9">
+    <img src="np.png" alt="Circular 10">
+  </section>
+
+</body>
+</html>

@@ -317,3 +317,28 @@ footer {
     min-height: 400px; /* or adjust based on content */
   }
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #3a7bd5;
+  }
+
+  #navbar ul.active {
+    display: flex;
+  }
+}

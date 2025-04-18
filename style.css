@@ -442,3 +442,79 @@ margin: 17px;
 font-size: 1.5rem;
 border-radius: 10px;
 cursor: pointer;} */
+
+
+@media (max-width: 768px) {
+    /* Navbar adjustments */
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navbar ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    #navbar ul li a {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Home section */
+    #home {
+        padding: 20px;
+        font-size: 18px;
+        height: auto;
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Chief guest section */
+    #services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #services .box {
+        width: 90%;
+    }
+
+    /* Contact section */
+    .contact-info-row {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .info-box {
+        margin: 10px 0;
+    }
+
+    /* Map section */
+    .map-container iframe {
+        height: 250px;
+    }
+
+    /* Event section tweaks already present, but ensure enough padding */
+    #event-schedule {
+        padding: 20px 10px;
+    }
+
+    .event-card {
+        padding: 15px;
+    }
+
+    .event-time {
+        font-size: 1.2rem;
+    }
+}

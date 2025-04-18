@@ -331,6 +331,13 @@ footer {
     display: block;
   }
 
+  @media (max-width: 768px) {
+  #navbar ul.active {
+    display: flex;
+  }
+}
+
+
   #navbar ul {
     display: none;
     flex-direction: column;

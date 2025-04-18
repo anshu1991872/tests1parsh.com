@@ -8,6 +8,16 @@
     <!-- <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/phone.css"> -->
    
 </head>
+
+    <script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.querySelector('#navbar ul');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
 <body>
     <nav id="navbar">
         <div id="logo">

@@ -63,12 +63,12 @@ body {
 
 /* HOME */
 #home {
-  padding: 140px 20px 40px;
+  padding: 100px 20px 40px;
   text-align: center;
   color: white;
   position: relative;
-  min-height: 100vh;
 }
+
 
 #home::before {
   content: "";
@@ -81,6 +81,7 @@ body {
   background-attachment: scroll;
   z-index: -1;
 }
+
 
 /* Optional: ensure no margin collapse after #home */
 #services-container {
